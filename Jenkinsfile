@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    node {
-      label 'localNode'
-    }
-
-  }
+  agent any
   stages {
     stage('Fetch from GitHub') {
       steps {
