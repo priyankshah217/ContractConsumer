@@ -17,7 +17,10 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 
 import java.io.IOException;
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 import static io.pactfoundation.consumer.dsl.LambdaDsl.newJsonArrayMinLike;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
@@ -42,22 +45,10 @@ public class TweetContractTest {
             lambdaDslJsonArray -> lambdaDslJsonArray
                 .object(lambdaDslObject -> lambdaDslObject
                     .stringType("userID", "1")
-                    .stringType("userName", "@Lurlene229")
+                    .stringType("userName", "@Pablo229")
                     .stringType("tweetDescription", "#ChuckNorris:Chuck Norris hosting is 101% uptime guaranteed.")
                 )).build())
         .toPact();
-//    return pactDslWithProvider
-//        .uponReceiving("Receiving Tweets")
-//        .path("/tweet/")
-//        .method("Get")
-//        .willRespondWith()
-//        .headers(headers)
-//        .status(200)
-//        .body(newJsonBody(lambdaDslJsonBody -> lambdaDslJsonBody.stringType("userID", "1")
-//            .stringType("userName", "@Lurlene229")
-//            .stringType("tweetDescription", "#ChuckNorris:Chuck Norris hosting is 101% uptime guaranteed.")
-//        ).build())
-//        .toPact();
   }
 
   @Test
@@ -67,7 +58,7 @@ public class TweetContractTest {
     final String expectedResponse = "[\n" +
         " {\n" +
         "\"userID\": \"1\",\n" +
-        "\"userName\": \"@Lurlene229\",\n" +
+        "\"userName\": \"@Pablo229\",\n" +
         "\"tweetDescription\": \"#ChuckNorris:Chuck Norris hosting is 101% uptime guaranteed.\"\n" +
         "},\n" +
         "{\n" +
