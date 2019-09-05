@@ -201,6 +201,9 @@
                 <version>${pact.version}</version>
                 <configuration>
                     <pactBrokerUrl>http://localhost/</pactBrokerUrl>
+                    <!--                    <pactBrokerUrl>https://test.pact.dius.com.au</pactBrokerUrl>-->
+                    <!--                    <pactBrokerUsername>dXfltyFMgNOFZAxr8io9wJ37iUpY42M</pactBrokerUsername>-->
+                    <!--                    <pactBrokerPassword>O5AIZWxelWbLvqMd8PkAVycBJh2Psyg1</pactBrokerPassword>-->
                     <pactDirectory>${project.build.directory}/pacts</pactDirectory>
                     <projectVersion>${project.version}</projectVersion>
                     <trimSnapshot>true</trimSnapshot> <!-- Defaults to false -->
