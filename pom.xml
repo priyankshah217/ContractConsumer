@@ -37,7 +37,7 @@
         <dockerfile-maven-plugin.version>1.4.12</dockerfile-maven-plugin.version>
         <maven-dependency-plugin.version>3.1.1</maven-dependency-plugin.version>
         <wiremock-junit5.version>1.3.1</wiremock-junit5.version>
-        <pact.version>4.0.0-beta.5</pact.version>
+        <pact.version>4.0.0-beta.6</pact.version>
     </properties>
 
     <dependencies>
@@ -200,10 +200,9 @@
                 <artifactId>pact-jvm-provider-maven</artifactId>
                 <version>${pact.version}</version>
                 <configuration>
-                    <pactBrokerUrl>http://localhost/</pactBrokerUrl>
-                    <!--                    <pactBrokerUrl>https://test.pact.dius.com.au</pactBrokerUrl>-->
-                    <!--                    <pactBrokerUsername>dXfltyFMgNOFZAxr8io9wJ37iUpY42M</pactBrokerUsername>-->
-                    <!--                    <pactBrokerPassword>O5AIZWxelWbLvqMd8PkAVycBJh2Psyg1</pactBrokerPassword>-->
+                    <pactBrokerUrl>https://test.pact.dius.com.au</pactBrokerUrl>
+                    <pactBrokerUsername>dXfltyFMgNOFZAxr8io9wJ37iUpY42M</pactBrokerUsername>
+                    <pactBrokerPassword>O5AIZWxelWbLvqMd8PkAVycBJh2Psyg1</pactBrokerPassword>
                     <pactDirectory>${project.build.directory}/pacts</pactDirectory>
                     <projectVersion>${project.version}</projectVersion>
                     <trimSnapshot>true</trimSnapshot> <!-- Defaults to false -->
