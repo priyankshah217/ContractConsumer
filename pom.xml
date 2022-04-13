@@ -26,7 +26,7 @@
         <sonar.exclusions>**/com/example/consumer/ConsumerApplication.java,
             **/com/example/consumer/entity/**/*.java
         </sonar.exclusions>
-        <h2.version>1.4.199</h2.version>
+        <h2.version>2.1.210</h2.version>
         <spring-cloud-starter-feign.version>2.0.0.M2</spring-cloud-starter-feign.version>
         <wiremock.version>2.24.1</wiremock.version>
         <docker.image.prefix>spring-consumer</docker.image.prefix>
